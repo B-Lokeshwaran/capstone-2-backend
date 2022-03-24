@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 const PORT = process.env.PORT || 5000
-const {MONGOURI} = require('./config/keys')
+const {MONGOURI} = "mongodb+srv://root:root@cluster0.mfvku.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 
 mongoose.connect(MONGOURI, {
